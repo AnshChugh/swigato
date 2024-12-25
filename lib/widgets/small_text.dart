@@ -19,7 +19,6 @@ class SmallText extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(fontSize: size, color: color),
-
       maxLines: 1,
     );
   }
