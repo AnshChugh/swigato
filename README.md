@@ -11,3 +11,8 @@ Made the UI of the intended home page that the user is supposed to see when logg
 
 Made the UI of the popular food detail page
 ![image of the popular food detail page](/progress/update2.JPG "Popular Food Detail Page")
+
+### progress 3:
+
+Made the UI of the Recommended food detail page
+![image of the Recommended food detail page](/progress/update3.JPG "Recommended Food Detail Page")

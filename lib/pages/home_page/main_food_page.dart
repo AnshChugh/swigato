@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:swigato/colors.dart';
 import 'package:swigato/dimensions.dart';
 import 'package:swigato/pages/food/popular_food_detail.dart';
+import 'package:swigato/pages/food/recommended_food_detail.dart';
 import 'package:swigato/widgets/app_column.dart';
 import 'package:swigato/widgets/big_text.dart';
 import 'package:swigato/widgets/icon_and_text_widget.dart';
@@ -199,7 +200,11 @@ class _MainFoodPageState extends State<MainFoodPage> {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
-                return _buildListItem(index);
+                return GestureDetector(
+                    onTap: () {
+                      Get.to(() => RecommendedFoodDetail(price: 12.88,));
+                    },
+                    child: _buildListItem(index));
               },
               childCount: 5,
             ),
